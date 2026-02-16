@@ -21,7 +21,7 @@ const BANNERS: BannerItem[] = [
   },
   {
     src: '/banners/Velir.png',
-    title: 'Velir',
+    title: 'Vaelir',
     oneLiner: 'A saga of heritage and power.',
   },
 ];
