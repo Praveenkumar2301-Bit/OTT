@@ -1,6 +1,6 @@
 /**
  * Hero banners: images from /Images folder.
- * Title = file name; one-liner derived from image name.
+ * Title = display name; one-liner derived from image name.
  */
 export interface BannerItem {
   src: string;
