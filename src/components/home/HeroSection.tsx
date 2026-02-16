@@ -6,11 +6,14 @@ import { motion } from 'framer-motion';
 import { Play } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { getBanners } from '@/lib/banners';
+import type { BannerItem } from '@/lib/banners';
 import { useEffect, useState } from 'react';
 
-export function HeroSection() {
-  const banners = getBanners();
+interface HeroSectionProps {
+  banners: BannerItem[];
+}
+
+export function HeroSection({ banners }: HeroSectionProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = banners[activeIndex];
   const { t } = useLanguage();

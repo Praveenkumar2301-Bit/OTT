@@ -1,9 +1,13 @@
 import { cookies } from 'next/headers';
 import { HeroSection, HeroTagline } from '@/components/home/HeroSection';
 import { Carousel } from '@/components/content/Carousel';
+import { getBanners } from '@/lib/banners';
 import { getCarouselSections } from '@/lib/mock-data';
 import { getStrings, LANG_COOKIE } from '@/lib/i18n';
 import type { Lang } from '@/lib/i18n';
+
+/** Ensure banner data (e.g. spelling) is always current; avoids stale static/cache */
+export const dynamic = 'force-dynamic';
 
 export default async function HomePage() {
   const cookieStore = await cookies();
@@ -16,11 +20,12 @@ export default async function HomePage() {
     'regional': t.regionalPicks,
   };
   const sections = getCarouselSections();
+  const banners = getBanners();
 
   return (
     <>
       <div className="pt-[72px]">
-        <HeroSection />
+        <HeroSection banners={banners} />
       </div>
       <div className="py-6">
         <HeroTagline />
