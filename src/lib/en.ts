@@ -1,0 +1,83 @@
+/**
+ * English UI strings for ZENTRA – same keys as Tamil for i18n switch.
+ */
+export const en = {
+  navHome: 'Home',
+  navBrowse: 'Browse',
+  navCreators: 'Creators',
+  navPublish: 'Publish Short Film',
+
+  tagline: 'Tamil & Indian Short Films — Publish. Watch. Rise.',
+  featuredShorts: 'Featured Tamil Shorts',
+  play: 'Play',
+  moreInfo: 'More Info',
+
+  trendingTamilShorts: 'Trending Tamil Shorts',
+  newReleases: 'New Tamil & Indian Releases',
+  directorDebuts: 'Tamil Director Debuts',
+  regionalPicks: 'Tamil Nadu & Indian Picks',
+
+  min: 'min',
+  views: 'views',
+  director: 'Director',
+  supportCreator: 'Support the Creator',
+  supportCreatorDemo: 'Support the Creator (demo)',
+  save: 'Save',
+  share: 'Share',
+
+  moreLikeThis: 'More like this',
+
+  creatorsTitle: 'Creators',
+  creatorsSubtitle: 'Tamil & Indian filmmakers who publish their short films on ZENTRA.',
+  publishedShorts: 'Published Shorts',
+  totalViews: 'Total views',
+  earnings: 'Earnings',
+  shortsCount: 'shorts',
+
+  browseTitle: 'Browse',
+  browseSubtitle: 'Explore Tamil and Indian short films by category.',
+
+  adminTitle: 'Admin Dashboard',
+  adminSubtitle: 'Publish short films, view stats, and moderate Tamil & Indian content.',
+  tabStats: 'Stats',
+  tabUpload: 'Upload',
+  tabContent: 'Content',
+  totalContent: 'Total content',
+  pendingApprovals: 'Pending approvals',
+  totalRevenue: 'Total revenue',
+  mockChartViews: 'Views (mock chart)',
+  mockChartRevenue: 'Revenue (mock chart)',
+  uploadFormNote: 'Mock upload form – no file is actually uploaded.',
+  formTitle: 'Title',
+  formTitlePlaceholder: 'Short film title',
+  formDescription: 'Description',
+  formDescriptionPlaceholder: 'Brief description',
+  formDirector: 'Director',
+  submitMock: 'Submit (mock)',
+  uploadSuccess: 'Upload submitted (demo only).',
+  tableTitle: 'Title',
+  tableDirector: 'Director',
+  tableStatus: 'Status',
+  tableActions: 'Actions',
+  approve: 'Approve',
+  reject: 'Reject',
+  rejectDummyNote: 'Approve / Reject are dummy actions for POC demo.',
+
+  footerTagline: 'Tamil & Indian short films. Publish your short film. Watch stories from Tamil Nadu and India.',
+  footerExplore: 'Explore',
+  footerBrowse: 'Browse',
+  footerCreators: 'Creators',
+  footerPublish: 'Publish Short Film',
+  footerCopyright: 'Demo only.',
+  footerDisclaimer: 'Sample images and video embeds are for demo purposes only. Replace with licensed content for production.',
+
+  categoryTamilShorts: 'Tamil Shorts',
+  categoryDrama: 'Drama',
+  categoryThriller: 'Thriller',
+  categoryComedy: 'Comedy',
+  categoryDocumentary: 'Documentary',
+  categoryRegional: 'Regional Picks',
+
+  noContentInCategories: 'No content in categories yet.',
+  earningsDemo: 'Earnings (demo)',
+} as const;
